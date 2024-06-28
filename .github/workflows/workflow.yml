@@ -14,6 +14,7 @@ jobs:
     name: Check for Change Request & Jira IDs provided in PR description
     uses: jgmeet/jira-integration/.github/workflows/merge-check.yml@main
     with:
+    secrets:
       EMAIL: ${{ secrets.EMAIL }}
       API_TOKEN: ${{ secrets.API_TOKEN }}
 
