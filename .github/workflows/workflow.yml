@@ -1,12 +1,6 @@
 name: PR Checks and Build
 
-on: 
-  pull_request:
-    branches:
-      - main
-    types:
-      - opened
-      - closed
+on:
 
 jobs:
   checking-ids:
