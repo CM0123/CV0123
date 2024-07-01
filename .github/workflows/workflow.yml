@@ -1,6 +1,14 @@
 name: PR Checks and Build
 
+on: 
+  pull_request_target:
+    branches:
+      - main
+    types:
+      - opened
+      - closed
 
+jobs:
   checking-ids:
     if: github.event.action == 'opened'
     name: Check for Change Request & Jira IDs provided in PR description
