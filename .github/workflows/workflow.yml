@@ -12,11 +12,11 @@ jobs:
   checking-ids:
     if: github.event.action == 'opened'
     name: Check for Change Request & Jira IDs provided in PR description
-    uses: CV0123/jira-integration0123/.github/workflows/merge-check.yml@main
+    uses: CM0123/jira-integration0123/.github/workflows/merge-check.yml@main
     secrets: inherit
 
   add-comments:
     if: github.event.pull_request.merged == true
     name: Add comment to Issues provided in PR description
-    uses: CV0123/jira-integration0123/.github/workflows/comment-after-merge.yml@main
+    uses: CM0123/jira-integration0123/.github/workflows/comment-after-merge.yml@main
     secrets: inherit
